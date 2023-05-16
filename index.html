@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/carLogo.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://kit.fontawesome.com/50ba038bad.js" crossorigin="anonymous"></script>
+
+
+
+  <title>EcoPeach Car Shop</title>
+</head>
+<body>
+  <nav>
+    <h1><a href="index.html">EcoPeach</a></h1>
+    <p id="hello">javascript</p>
+    <ul >
+      <li><a title="Vehicles Page" class="current" href="index.html">Vehicles</a></li>
+      <li><a title="Meet the Owner" href="pages/shop.html">About us</a></li>
+      <li><a  title="Support & Services"href="pages/support.html">Support &amp; Services</a></li>
+      <li><button type="button" title="My Cart" id="bCart"><i class="fa-solid fa-cart-shopping"></i></button> </li>
+    </ul>
+
+  </nav>
+  <section class="iCart" id="iCartID"> 
+    <ul>
+      <li><h4 id="user">name</h4><p>User Name</p></li>
+      <li><h5 id="A"> 0 </h5><p id="a">Item 1</p></li>
+      <li><h5 id="B"> 0 </h5><p id="b">Item 2</p></li>
+      <li><h5 id="C"> 0 </h5><p id="c">Item 3</p></li>
+      <li><h5 id="D"> 0 </h5><p id="d">Item 4</p></li>
+      <li><h4 id="total">Total</h4><p>total</p></li>
+    </ul>
+    <button class="purchase" title="Create Order" type="button">Create Order</button>
+    
+
+    
+  
+  </section>
+  <div class="hero">
+
+    <h2>"Califauxnia's top eco-friendly car company!" <br> - ElectriCar Magazine</h2>
+
+  </div>
+ 
+<div class="banner"><h4 id='ban'>This will be changed using JavaScript...</h4></div>
+<section>
+  <article>
+  <h3>Our Dedicated Team</h3>
+  <p>At EcoPeach, we are committed to providing eco-friendly solutions to our customers who care about the environment. We believe that driving an electric or hybrid car shouldn't be a luxury but a necessity. Our selection of vehicles meets the highest standards of sustainability and energy efficiency. We take pride in the fact that our cars are not only better for the planet but also offer superior performance, comfort, and style.
+</p>
+
+  </article>
+  <img src="images/team.jpg">
+</section>
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#94; </button>
+
+ <section class="grid-box">
+  <div class="grid">
+
+    <!-- function 6 - change color of cars using buttons and image -->
+
+
+    <figure>
+      <div class="containImg"><img id="img1" src="images/suvO.jpg"><h5 class="carTitle">EcoPeach - Hummingbird 2017</h5></div>
+
+      <figcaption>
+        <section>
+        <h3 class="aCo">Available Colors</h3>
+        <div class="colors">
+          <button class="suvP" title="Hot Pink"  onclick="document.getElementById('img1').src='images/suvP.jpg'"></button>
+          <button class="suvG" title="Grey" onclick="document.getElementById('img1').src='images/suvG.jpg'"></button>
+          <button class="suvO" title="Orange" onclick="document.getElementById('img1').src='images/suvO.jpg'"></button>
+      </div>
+    </section>
+    <section class="addTo">
+      <h4 class="price" id="suvPrice">$$$$$$</h4>
+      <button  onClick="myFuncA()" title="Add to Order" type="button"> <i class="fa-solid fa-cart-plus"></i></button>
+    
+    </section>
+      </figcaption>
+  </figure>
+  <figure>
+    <div class="containImg"><img id="img2" src="images/blackW.jpg"><h5 class="carTitle">EcoPeach - Sparrow 2019</h5></div>
+
+  <figcaption>
+    
+    <section>
+    <h3 class="aCo">Available Colors</h3>
+    <div class="colors">
+    <button class="yellW" title="Yellow" onclick="document.getElementById('img2').src='images/yellW.jpg'"></button>
+    <button class="tealW" title="Turqoise" onclick="document.getElementById('img2').src='images/tealW.jpg'"></button>
+    <button class="blackW" title="Black" onclick="document.getElementById('img2').src='images/blackW.jpg'"></button>
+  </div>
+</section>
+<section class="addTo">
+  <h4 class="price" id="wPrice">$$$$$$</h4>
+  <button  onClick="myFuncB()" title="Add to Order" type="button"> <i class="fa-solid fa-cart-plus"></i></button>
+
+</section>
+  </figcaption>
+</figure>
+
+<figure>
+  <div class="containImg">  <img id="img3" src="images/vanWh.jpg"><h5 class="carTitle">EcoPeach - Vulture 2021</h5></div>
+
+<figcaption>
+  <section>
+  <h3 class="aCo">Available Colors</h3>
+  <div class="colors">
+  <button class="vanP" title="Pastel Pink" onclick="document.getElementById('img3').src='images/vanP.jpg'"></button>
+  <button class="vanWh" title="White" onclick="document.getElementById('img3').src='images/vanWh.jpg'"></button>
+  <button class="vanBl" title="Baby Blue" onclick="document.getElementById('img3').src='images/vanBl.jpg'"></button>
+  </div>
+</section>
+<section class="addTo">
+  <h4 class="price" id="vanPrice">$$$$$$</h4>
+  <button  onClick="myFuncC()" title="Add to Order" type="button"> <i class="fa-solid fa-cart-plus"></i></button>
+
+</section>
+</figcaption>
+</figure>
+<figure>
+  <div class="containImg"><img id="img4" src="images/carBl.jpg"><h5 class="carTitle">EcoPeach - Bluejay 2023</h5></div>
+  
+<figcaption>
+  <section>
+  <h3 class="aCo">Available Colors</h3>
+  <div class="colors">
+  <button  class="carDa" title="Black" onclick="document.getElementById('img4').src='images/carDa.jpg'"></button>
+  <button class="carBl" title="Blue" onclick="document.getElementById('img4').src='images/carBl.jpg'"></button>
+  <button  class="carGr" title="Green" onclick="document.getElementById('img4').src='images/carGr.jpg'"></button>
+  </div>
+</section>
+<section class="addTo">
+  <h4 class="price" id="carPrice">$$$$$$</h4>
+  <button  title="Add to Order" id="addToCart" onClick="myFuncD()"type="button"><i class="fa-solid fa-cart-plus"></i></button>
+
+</section>
+</figcaption>
+</figure>
+  </div>
+
+ </section>
+<footer>
+  <ul class="socialLinks">
+    <li><a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="https://www.linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+    <li><a href="https://www.youtube.com" target="_blank" title="Youtube"><i class="fa-brands fa-youtube"></i></a></li>
+    <li><a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+  </ul>
+  <p style="text-align: center;"><small><a  target="_blank" href="http://www.kingricdesign.com">@KingRicDesign</a></small></p>
+</footer>
+
+<script type="text/javascript" src="js/js.js"></script>
+<script src="js/jquery-1.11.0.min.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

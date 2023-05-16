@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+* {box-sizing: border-box; }
+html{
+  min-width: 400px;
+
+  font-family: 'Dongle', sans-serif;
+  background-color: #cddddd;
+  color: #2E2F2F;
+
+}
+body{
+  min-height: 500px;
+}
+.current {
+  color: #488b49;
+}
+nav{
+
+  font-family: 'Plus Jakarta Sans', sans-serif; ;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: rgba(255,255,255,.3);
+}
+nav h1{
+  background: url(../images/carLogo.png) center/cover no-repeat;
+  background-size: 60px;
+  line-height: 1.6em;
+  width: 15%;
+}
+.pr::before{
+  content: '$';
+}
+nav h1 a{
+  color: transparent;
+}
+nav ul{
+
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  list-style-type: none;
+  line-height: 2em;
+  padding: 1em 0 0 0;
+  font-size: .8em;
+
+}
+nav p{
+  width: 17%;
+  font-size: .9em;
+  margin: 0 1.4em;
+  padding: 1.9em 0 0 .35em;
+}
+nav ul li a{
+  font-weight: 300;
+}
+.fa-cart-shopping{
+  font-size: 1.5em;
+}
+a{
+  color: #2E2F2F;
+  text-decoration: none;
+  font-weight: 700;
+}
+footer li a:hover, nav li a:hover{
+  color: #488b49;
+  transition: .5s ease-out;
+}
+
+nav button:hover{
+  transition: .5s ease-out;
+}
+
+nav button{
+
+  height:2.5em;
+}
+body{
+  margin: 0 auto;
+}
+div.hero{
+ background: url(../images/carA.jpg) center/cover no-repeat;
+ min-height: 400px;
+ width: 100%;
+}
+.hero h2{
+  position: relative;
+  left: 0;
+  top: .6em;
+  width: 95%;
+  background-color:rgba(255,255,255,.6);
+  margin: 0 auto;
+  text-align: right;
+  padding: .9em ;
+  font-size: 1.24em;
+
+}
+.hero h2::first-line{
+  font-size: 1.25em;
+}
+
+.cart{
+  position: absolute;
+  right: 9000px;
+}
+nav button:focus:hover ~ .cart {
+  background-color: #2E2F2F;
+  color: #cddddd;
+  position: absolute;
+  right: 0;
+  left: 60%;
+  top: 70px;
+  z-index: 1000;
+}
+small a:hover{
+  color: #488b49;
+}
+button.purchase:hover{
+  color: #488b49;
+}
+.accordion dd {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+dd p{
+  width: 100%;
+}
+.repairImg{
+  width: 100%;
+
+  padding: 1.2em 0 0 0;
+}
+.banner{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400;
+  background-color: #f78764;
+  color: #4c4d4d;
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+}
+.banner h4{
+  font-size: 1.35em;
+  font-weight: 400;
+  margin: 0 auto;
+}
+section{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items:flex-start;
+  width: 95%;
+  margin: 0 auto;
+}
+section article{
+  width:90%;
+  margin: .8em auto;
+}
+section article h3{
+  font-size: 1.6em;
+  border-bottom: solid 3px #4aad52;
+}
+section img{
+  height: 90%;
+  width: 90%;
+  margin: 1.7em auto;
+}
+section article p{
+  font-size:1.5em;
+}
+
+footer{
+  position: relative;
+  bottom: -80px;
+  min-height: 120px;
+  background-color: rgba(255,255,255,.3);
+  width: 100%;
+}
+footer ul{
+  display: flex;
+  list-style: none;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding: 1em 0 0 0;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.grid{
+display: flex;
+flex-direction: column;
+
+}
+.grid figure{
+  width: 100%;
+  margin:1em auto ;
+  background: linear-gradient(transparent, rgba(145, 152, 229,.2));;
+  gap: .5em;
+  border-radius: 10px;
+
+}
+.grid figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+figure:nth-child(2) img{
+  margin-bottom: 3em;
+}
+figure figcaption{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+h5.carTitle{
+  margin: 0 auto;
+  font-size: 1.4em;
+  padding-left: .82em;
+}
+
+figure figcaption .aCo{
+  text-align: center;
+
+  margin:0 0 0 1em;
+}
+figure figcaption button {
+  margin: .75em;
+
+}
+figure figcaption section .colors {
+  display: flex;
+  justify-content: space-around; 
+  flex-direction: row;
+  padding-left: .59em;
+}
+figure figcaption section{ 
+  display: flex;
+  flex-direction: column;
+}
+figure figcaption section.addTo h4{
+  width: 50%;
+  margin:0 0 0 1em;
+
+  text-align: center;
+}
+figure figcaption section.addTo button{
+  width: 50%;
+  margin-left: 1em;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  line-height: 1.3em;
+}
+figure figcaption section.addTo button:hover{
+  color: #488b49;
+  transition: .5s ease-out;
+}
+figure figcaption section.addTo button:active{
+  color:#2E2F2F;
+  transition: 0s;
+}
+.pr{
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #488b49;
+}
+.suvP, .suvG, .suvO, .yellW, .tealW, .blackW, .vanP, .vanWh, .vanBl, .carDa, .carBl, .carGr{
+  border: inset 2px #c0c5c1;
+  height: 1.5em;
+  border-radius: 20px;
+  width: 1.5em;
+
+}
+.suvP:hover, .suvG:hover, .suvO:hover, .yellW:hover, .tealW:hover, .blackW:hover, .vanP:hover, .vanWh:hover, .vanBl:hover, .carDa:hover, .carBl:hover, .carGr:hover{
+  border: solid 2px #555;
+  transition: .5s ease-out;
+}
+.suvP{
+  background-color: #ee1782;
+}
+.suvG{
+  background-color: #616161;
+}
+.suvO{
+  background-color: #ff8800;
+}
+.yellW{
+  background-color: #e5ff00;
+}
+.tealW{
+  background-color: #25e2e2;
+}
+.blackW{
+  background-color: #2E2F2F;
+}
+.vanP{
+  background-color: #ffbefa;
+}
+.vanBl{
+  background-color: #72c0f3;
+}
+.carDa{
+  background-color: #2E2F2F;
+}
+.carBl{
+  background-color: #0004ff;
+}
+.carGr{
+  background-color: #3ada6f;
+}
+#bCart{
+  background-color: transparent;
+  border: 0;
+}
+#bCart:hover{
+  color: #488b49;
+}
+.iCart{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.iCart ul li{
+  margin: 0 auto;
+  list-style-type: none;
+  font-size: 1.2em;
+}
+.iCart ul li p{
+  margin: 0 auto;
+  font-size: .7em;
+  color: rgba(46, 47, 47,.6);
+}
+.iCart ul li h4{
+  font-weight: 500;
+
+  margin: 0 auto;
+}
+.iCart h5{
+  margin: 0 auto;
+}
+#iCartID{
+  position: absolute;
+  background: #cddddd;
+  width: 240px;
+  right: 9999px;
+  z-index: 8000;
+  padding: .4em;
+}
+.purchase{
+  display: block;
+  background-color: transparent;
+  border: none;
+  font-size: .8em;
+  text-align: center;
+  margin: 0 auto;
+}
+body section.show {
+  left: 70%;
+}
+
+#myBtn{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(74,173,82,.9); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  transition: .5s ease-out;
+  box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+}
+.price::before, #total::before, #A::before, #B::before, #C::before, #D::before{
+  content: '$' ;
+}
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+html #shopPage section.content article{
+  display: flex;
+  flex-direction: column-reverse;
+}
+html #shopPage section.content article h2{
+  font-size: 2em; margin: 0 auto;border-bottom: solid 3px #488b49;
+}
+html #shopPage section.content img{
+  width: 100%;
+}
+
+.accordion {
+  margin: 50px;
+  font-size: 1.1em;
+} 
+.accordion dt{
+  font-size: 1.3em;
+}  
+dt, dd {
+  padding: 10px;
+  border: 1px solid rgba(60, 60, 60, 0.6);
+  border-bottom: 0; 
+}
+dt:hover{
+  background-color: #f78764;
+}
+dd:last-of-type{
+
+  border: 1px solid rgba(61, 61, 61, 0.6);
+  border-top: 0;
+}
+
+a.acc_btn {
+ display: block;
+ color: #2E2F2F;
+ font-weight: bold;
+}
+
+  
+ dd {
+  border-bottom: 0;
+    border-top: 0; 
+
+ }
+ dd:last-of-type{
+
+  position: relative;
+  top: -1px;
+ }
+
+a.acc_btn {
+ text-decoration: none;
+}
+#supPage article{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#supPage h2{
+  border-bottom: 3px solid #488b49;
+}
+
+html #shopPage section.content article{
+  display: flex;
+}
+
+/* mid screen */
+@media screen and (min-width: 720px){
+  html{
+    font-size: 1.3em;
+  }
+  nav h1{
+    padding: .3em 0 0 .4em ;
+    font-weight: 300;
+    font-size: 1.3em;
+    color: #2E2F2F;
+  }
+  nav h1 a{
+    font-weight: 300;
+
+    color: #2E2F2F;
+  }
+  
+nav ul li a{
+  font-weight: 700;
+}
+  .hero h2{
+    background-color: rgba(255,255,255,.8);
+  }
+  div.hero{
+    min-height: 500px;
+  }
+  section{
+    flex-direction: row;
+  }
+  section article{
+    width: 45%;
+  }
+  section img{
+    width: 50%;
+    height: 50%;
+    margin: 2.5em auto;
+  }
+  section article p{
+    font-size:1em;
+  }
+  .grid{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .grid figure {
+    width: 45%;
+  }
+  .accordion dd {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  dd p{
+    width: 40%;
+  }
+  .repairImg{
+    width: 50%;
+    height: 50%;
+    padding: 1.2em 0 0 0;
+  }
+html #shopPage section.content article{
+  align-items: center;
+}
+html #shopPage section.content article {
+  width: 100%;
+}
+html #shopPage section.content img{
+  width: 80%;
+}
+html #shopPage section.content div{
+  width: 80%;
+  padding: 1.3em 0 0 0;
+}
+  
+html #supPage section.content article{
+  align-items: center;
+}
+html #supPage section.content article {
+  width: 100%;
+}
+html #supPage section.content img{
+  width: 80%;
+}
+html #supPage section.content div{
+  width: 80%;
+  padding: 1.3em 0 0 0;
+}
+}
+
+
+
+/* large screen */
+@media screen and (min-width: 1000px){
+
+html{
+  font-size: 1.6em;
+}
+nav{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+body{ 
+  max-width: 1400px;
+  margin: 0 auto;
+
+}
+  nav h1{
+    background: url(../images/carLogo.png) center/cover no-repeat;
+    background-size: 60px;
+    font-weight: 700;
+ 
+  }
+  nav h1 a{
+    font-weight: 700;
+
+    color: #2E2F2F;
+  }
+  nav ul{
+  
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+    padding: 1em 0 0 0;
+  
+  }
+  a{
+    color: #2E2F2F;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  body{
+    margin: 0 auto;
+  }
+  div.hero{
+   background: url(../images/carA.jpg) center/cover no-repeat;
+   min-height: 600px;
+  }
+  .hero h2{
+    position: relative;
+    left: 100px;
+    width: 70%;
+    background-color:rgba(255,255,255,.8);
+    margin: 0 auto;
+    text-align: right;
+
+
+  
+  }
+  .hero h2::first-line{
+    font-size: 1.25em;
+  }
+  section img{
+
+    margin: 2em auto;
+  }
+    
+html #shopPage section.content article{
+  flex-direction: row;
+}
+html #shopPage section.content img{
+  width: 45%;
+}
+html #shopPage section.content div{
+  width: 45%;
+}
+html #shopPage footer{
+  margin-top: 150px;
+}
+    
+html #supPage section.content article{
+  flex-direction: row;
+}
+html #supPage section.content img{
+  width: 45%;
+}
+html #supPage section.content div{
+  width: 45%;
+}
+html #supPage footer{
+  margin-top: 150px;
+}
+}
+
+/* font-family: 'Dongle', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif; */
